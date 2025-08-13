@@ -34,7 +34,7 @@ const Header = () => {
     ${show ? "top-4" : "top-7"} transition-[top] duration-300`}
     >
       <nav className="w-full flex justify-between items-center">
-        <a href="#" data-aos="fade-down">
+        <a href="#">
           <img
             src={iconLogo}
             alt="logo"
@@ -43,10 +43,7 @@ const Header = () => {
             }`}
           />
         </a>
-        <ul
-          className="list-none transition-all duration-200 gap-5 lg:gap-10 xl:gap-12 md:flex hidden justify-end items-center"
-          data-aos="fade-down"
-        >
+        <ul className="list-none transition-all duration-200 gap-5 lg:gap-10 xl:gap-12 md:flex hidden justify-end items-center">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -63,12 +60,9 @@ const Header = () => {
           ))}
         </ul>
         <div className="flex gap-3 flex-1 md:flex-none justify-end items-center">
-          <div
-            className="flex items-center gap-2 sm:gap-3"
-            data-aos="fade-down"
-          >
+          <div className="flex items-center gap-2 sm:gap-3">
             <Button>Download </Button>
-            <Button>Login</Button>
+            <Button className="!bg-black">Login</Button>
           </div>
           <div className="md:hidden flex justify-end items-center">
             <button className="size-9 bg-primary flex-center rounded">
@@ -84,7 +78,7 @@ const Header = () => {
             <div
               className={`${
                 !toggle ? "hidden" : "flex"
-              } p-6 bg-white absolute top-24 sm:top-[115px] right-0 mx-4 min-w-[140px] rounded-xl animation-slide-top z-[1]`}
+              } p-6 bg-white absolute top-[75px] sm:top-[115px] right-0 mx-4 min-w-[140px] rounded-xl animation-slide-top z-[1]`}
             >
               <ul className="list-none flex justify-end items-start flex-1 flex-col">
                 {navLinks.map((nav, index) => (

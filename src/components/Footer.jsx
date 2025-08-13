@@ -18,13 +18,13 @@ const Footer = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <footer className="my-4 p-4 sm:p-6 rounded-4xl">
+    <footer className="my-4 p-4 sm:p-6 rounded-4xl bg-white">
       <div className="max-w-7xl mx-auto space-y-8 px-2 pb-10 sm:px-6 lg:space-y-16 lg:px-8">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
             <div className="mb-8">
               <img src={iconLogo} alt="" className="size-20 md:size-24 mb-5" />
-              <p>
+              <p className="!text-dark-200">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Adipisci aliquid unde reprehenderit voluptatum optio, incidunt
                 laboriosam tempore temporibus non repellendus!
@@ -54,9 +54,9 @@ const Footer = () => {
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-3 xl:grid-cols-4">
             {footerLinks.map((section, index) => (
               <div key={index}>
-                <p className="font-medium text-primary text-xl">
+                <h6 className="font-medium text-black text-xl">
                   {section.heading}
-                </p>
+                </h6>
 
                 <ul className="mt-6 space-y-4 text-sm">
                   {section.links.map((link, index) => (
@@ -93,8 +93,8 @@ const Footer = () => {
         </marquee>
       </div>
       <div className="max-w-7xl mx-4 xl:mx-auto">
-        <div className="flex items-center gap-2 justify-center text-center flex-wrap text-base text-gray font-urbanist font-normal text-white">
-          <p className=" text-white">
+        <div className="flex items-center gap-2 justify-center text-center flex-wrap text-base text-gray font-urbanist font-normal text-black">
+          <span>
             © {new Date().getFullYear()},
             <a
               href="https://ludoplayers.com"
@@ -104,7 +104,7 @@ const Footer = () => {
               Ludo Technologies Private Limited
             </a>
             | All Rights Reserved.
-          </p>
+          </span>
         </div>
       </div>
       {isMobile && (

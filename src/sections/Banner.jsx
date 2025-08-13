@@ -1,7 +1,6 @@
 import { ImageCertificate } from "@/assets/images";
 import Typewriter from "typewriter-effect";
 import React from "react";
-import { tiltOption } from "@/constants/tiltOption";
 import Tilt from "@/components/Tilt";
 
 const Banner = () => {
@@ -34,7 +33,7 @@ const Banner = () => {
                       <span className="text-sm sm:text-lg font-bold text-primary block">
                         ₹25 Cr+
                       </span>
-                      <span className="text-xs sm:text-base font-normal text-dark-200">
+                      <span className="text-xs sm:text-base font-normal text-white">
                         Daily Winnings
                       </span>
                     </div>
@@ -60,7 +59,7 @@ const Banner = () => {
                       <span className="text-sm sm:text-lg font-bold text-primary block">
                         Instant
                       </span>
-                      <span className="text-xs sm:text-base font-normal text-dark-200">
+                      <span className="text-xs sm:text-base font-normal text-white">
                         Withdrawals
                       </span>
                     </div>
@@ -86,7 +85,7 @@ const Banner = () => {
                       <span className="text-sm sm:text-lg font-bold text-primary block">
                         80M+
                       </span>
-                      <span className="text-xs sm:text-base font-normal text-dark-200">
+                      <span className="text-xs sm:text-base font-normal text-white">
                         DOWNLOADS
                       </span>
                     </div>
@@ -132,15 +131,15 @@ const Banner = () => {
             data-aos="fade-left"
             // data-aos-duration="1000"
           >
-            <Tilt className="box" options={tiltOption}>
-              <img
-                src="https://www.mpl.live/_next/image?url=https%3A%2F%2Fcms-origin.mpl.live%2Fcms-latest-env%2Fimages%2FMpl_New_Banner_23bbcc5ce6.webp&w=750&q=75"
-                alt="banner"
-                // width={438}
-                // height={350}
-                className="ml-auto md:h-80 lg:h-96 xl:h-[550px] object-contain"
-              />
-            </Tilt>
+            {/* <Tilt className="box" options={tiltOption}> */}
+            <img
+              src="https://www.mpl.live/_next/image?url=https%3A%2F%2Fcms-origin.mpl.live%2Fcms-latest-env%2Fimages%2FMpl_New_Banner_23bbcc5ce6.webp&w=750&q=75"
+              alt="banner"
+              // width={438}
+              // height={350}
+              className="ml-auto md:h-80 lg:h-96 xl:h-[550px] object-contain"
+            />
+            {/* </Tilt> */}
           </div>
         </div>
       </div>

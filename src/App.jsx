@@ -42,8 +42,8 @@ const App = () => {
       ) : (
         <main className="pt-5 sm:pt-8 p-4 container mx-auto">
           <Header />
-          {/* <Banner /> */}
-          {/* <EnjoyGames /> */}
+          <Banner />
+          <EnjoyGames />
           <About />
           <Winners />
           <DownloadCashApp />

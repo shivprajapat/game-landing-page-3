@@ -18,7 +18,7 @@ const OfferCard = ({ imageSrc, heading, duration, description }) => {
         onMouseEnter={() => setActive(true)}
         onMouseLeave={() => setActive(false)}
       >
-        <div className="relative overflow-hidden h-52 sm:h-60 rounded-3xl cursor-pointer bg-gradient-to-b from-light-blue-100 to-light-blue-200">
+        <div className="relative overflow-hidden h-52 sm:h-60 rounded-3xl cursor-pointer bg-white">
           <div
             className={`absolute rounded-full transition-all duration-300 ease-in-out font-bold text-black flex text-center
                ${
@@ -46,9 +46,13 @@ const OfferCard = ({ imageSrc, heading, duration, description }) => {
               >
                 {heading}
               </h5>
-              <p className={`text-base font-normal ${active && "!text-white"}`}>
+              <span
+                className={`text-base text-dark-200 font-normal ${
+                  active && "!text-white"
+                }`}
+              >
                 {description}
-              </p>
+              </span>
             </div>
           </div>
         </div>

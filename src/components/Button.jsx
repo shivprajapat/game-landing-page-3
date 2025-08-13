@@ -6,7 +6,7 @@ const Button = ({ fullWidth, loading, children, className, ...props }) => {
       <button
         className={`${className} ${
           fullWidth && "w-100"
-        } primary-gradient text-white rounded-full px-4 sm:px-5 py-2 sm:py-3 cursor-pointer w-full`}
+        } bg-primary hover:bg-black transition-all text-white rounded-full px-4 sm:px-5 py-2 sm:py-3 cursor-pointer w-full`}
         disabled={loading}
         {...props}
       >

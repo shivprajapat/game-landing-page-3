@@ -14,12 +14,16 @@ const AccordionItem = ({ title, content, isOpen, onClick }) => {
   }, [isOpen]);
 
   return (
-    <div className="overflow-hidden">
+    <div
+      className={`overflow-hidden rounded-lg ${
+        open ? "border border-primary" : ""
+      }`}
+    >
       <button
         onClick={onClick}
-        className="w-full text-left px-4 py-3 sm:py-4 bg-light-blue-200 flex justify-between items-center transition-colors"
+        className="w-full text-left px-4 py-3 sm:py-4 flex justify-between items-center transition-colors"
       >
-        <span className="font-normal text-black text-sm sm:text-lg">
+        <span className="font-normal text-white text-sm sm:text-lg">
           {title}
         </span>
         <span className=" bg-primary rounded-full size-7 min-w-7">
@@ -32,7 +36,7 @@ const AccordionItem = ({ title, content, isOpen, onClick }) => {
         style={{
           maxHeight,
         }}
-        className="transition-all duration-500 ease-in-out overflow-hidden px-4 text-sm sm:text-base bg-light-blue-200 text-black"
+        className="transition-all duration-500 ease-in-out overflow-hidden px-4 text-sm sm:text-base text-white"
       >
         <div className="py-3">{content}</div>
       </div>
